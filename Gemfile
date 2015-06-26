@@ -10,7 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'stripe'
 gem 'mandrill-api'
 gem 'payola-payments'
-
+gem 'rails_admin'
 
 group :development, :test do
   gem 'byebug'
