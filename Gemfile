@@ -8,7 +8,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'stripe'
-
+gem 'mandrill-api'
 
 group :development, :test do
   gem 'byebug'
