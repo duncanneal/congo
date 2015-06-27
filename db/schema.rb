@@ -33,6 +33,9 @@ ActiveRecord::Schema.define(version: 20150626193854) do
   end
 
   create_table "payola_models", force: :cascade do |t|
+    t.integer  "price"
+    t.string   "name"
+    t.string   "permalink"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
