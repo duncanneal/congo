@@ -1,6 +1,6 @@
 CarrierWave.configure do |config|
   config.storage    = :aws
-  config.aws_bucket = ENV.fetch('AWS_S3_BUCKET_NAME')
+  config.aws_bucket = ENV.fetch('AWS_BUCKET_NAME')
   config.aws_acl    = 'public-read'
   config.asset_host = 'http://example.com'
 
