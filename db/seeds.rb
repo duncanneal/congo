@@ -9,7 +9,6 @@ user = CreateAdminService.new.call
 puts 'CREATED ADMIN USER: ' << user.email
 # Environment variables (ENV['...']) can be set in the file .env file.
 
-
 30.times do
   u = User.new
   u.email = Faker::Internet.email(u.name)
@@ -23,6 +22,7 @@ end
   p = PayolaModel.new
   p.price = Faker::Commerce.price
   p.name = Faker::Commerce.product_name
-  p.permalink = Rails.application.secrets.domain_name + '/' + p.name.gsub(/\s/)
+  p.permalink = Rails.application.secrets.domain_name + p.name
+  p.image = 'http://loremflickr.com/640/480/product'
   p.save
 end

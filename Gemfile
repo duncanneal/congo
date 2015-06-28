@@ -7,11 +7,16 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+
 gem 'stripe'
 gem 'mandrill-api'
 gem 'payola-payments'
 gem 'rails_admin'
 gem 'faker'
+
+gem 'carrierwave'
+gem "mini_magick"
+gem 'fog'
 
 group :development, :test do
   gem 'byebug'
