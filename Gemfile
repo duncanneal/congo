@@ -11,6 +11,7 @@ gem 'stripe'
 gem 'mandrill-api'
 gem 'payola-payments'
 gem 'rails_admin'
+gem 'faker'
 
 group :development, :test do
   gem 'byebug'
