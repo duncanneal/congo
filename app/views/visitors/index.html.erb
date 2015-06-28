@@ -9,11 +9,10 @@
         <%= p.name %>
       </td>
       <td>
-        <%= p.price %>
+        <%= "$#{p.price}" %>
       </td>
       <td>
         <%= image_tag(p.image) %><%= p.image %>
-        
       </td>
     </tr>
     <% end %>
