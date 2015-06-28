@@ -15,8 +15,9 @@ gem 'rails_admin'
 gem 'faker'
 
 gem 'carrierwave'
+gem 'carrierwave-aws'
 gem "mini_magick"
-gem 'fog'
+
 
 group :development, :test do
   gem 'byebug'
