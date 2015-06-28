@@ -23,6 +23,6 @@ end
   p = PayolaModel.new
   p.price = Faker::Commerce.price
   p.name = Faker::Commerce.product_name
-  p.permalink = Rails.application.secrets.domain_name + p.name
+  p.permalink = Rails.application.secrets.domain_name + '/' + p.name.gsub(/\s/)
   p.save
 end
