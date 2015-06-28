@@ -19,10 +19,10 @@ puts 'CREATED ADMIN USER: ' << user.email
 end
 
 100.times do
-  p = PayolaModel.new
-  p.price = Faker::Commerce.price
-  p.name = Faker::Commerce.product_name
-  p.permalink = Rails.application.secrets.domain_name + p.name
-  p.image = 'http://loremflickr.com/640/480/product'
-  p.save
+   PayolaModel.create!({
+    :name => Faker::Commerce.product_name,
+    :price => Faker::Commerce.price,
+    :permalink => Faker::Lorem.sentence,
+    :remote_image_url => 'http://loremflickr.com/640/480/product'
+  })
 end
