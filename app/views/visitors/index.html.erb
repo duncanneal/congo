@@ -16,7 +16,7 @@
        <%= render 'payola/transactions/checkout', sellable: p %>
       </td>
       <td>
-        <%= image_tag(p.image.thumb) %>
+        <%= image_tag(p.image, :size => '125x125') %>
       </td>
     </tr>
     <% end %>
