@@ -9,7 +9,7 @@
         <%= p.name %>
       </td>
       <td>
-       <%= render 'payola/transactions/checkout', sellable: PayolaModel.first %>
+       <%= render 'payola/transactions/checkout', sellable: p %>
       </td>
       <td>
         <%= image_tag(p.image) %>
@@ -18,3 +18,5 @@
     <% end %>
   </tbody>
 </table>
+
+<%= paginate @products %>

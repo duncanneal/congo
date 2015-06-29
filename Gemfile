@@ -13,6 +13,7 @@ gem 'mandrill-api'
 gem 'payola-payments'
 gem 'rails_admin'
 gem 'faker'
+gem 'kaminari'
 
 gem 'carrierwave'
 gem 'carrierwave-aws'

@@ -285,6 +285,7 @@ DEPENDENCIES
   hub
   jbuilder (~> 2.0)
   jquery-rails
+  kaminari
   mandrill-api
   mini_magick
   payola-payments
