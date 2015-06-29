@@ -18,12 +18,13 @@ puts 'CREATED ADMIN USER: ' << user.email
   u.save
 end
 
-100.times do
+10.times do
   product_name = Faker::Commerce.product_name
-  PayolaModel.create!({
+  PayolaModel.create({
     :name => Faker::Commerce.product_name,
-    :price => Faker::Commerce.price,
-    :permalink => Faker::Lorem.sentence,
+    :price => (Faker::Commerce.price * 100).to_i,
+    :permalink => product_name.parameterize,
     :remote_image_url => "http://loremflickr.com/640/480/#{product_name.split.last.downcase}"
   })
+  puts "Created '#{product_name}'."
 end
