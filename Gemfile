@@ -19,6 +19,7 @@ gem 'carrierwave-aws'
 gem "mini_magick"
 
 gem 'newrelic_rpm'
+gem 'rollbar', '~> 1.5.3'
 
 group :development, :test do
   gem 'byebug'
