@@ -18,7 +18,7 @@ puts 'CREATED ADMIN USER: ' << user.email
   u.save
 end
 
-10.times do
+100.times do
   product_name = Faker::Commerce.product_name
   PayolaModel.create({
     :name => Faker::Commerce.product_name,
