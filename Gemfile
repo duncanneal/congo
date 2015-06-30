@@ -18,6 +18,7 @@ gem 'carrierwave'
 gem 'carrierwave-aws'
 gem "mini_magick"
 
+gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'byebug'
