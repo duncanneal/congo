@@ -11,9 +11,9 @@ puts 'CREATED ADMIN USER: ' << user.email
 
 30.times do
   u = User.new
+  u.name = Faker::Name.name
   u.email = Faker::Internet.email(u.name)
   u.password = Faker::Internet.password(8)
-  u.name = Faker::Name.name
   u.role = 0
   u.save
 end
